@@ -1,0 +1,23 @@
+<ion-view view-title="Videos">
+  <ion-content class='center'>
+      <div class="list card "ng-repeat="plays in videos">
+        <div class="item item-text-wrap"  style="margin: auto">
+          <h2>{{plays.title}}</h2>
+          <p><i class="ion ion-ios-calender-outline"></i>{{plays.date | limitTo: 10}}</p>  
+        </div>
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#">
+                <i class="icon ion-thumbsup">Like</i> 
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-chatbox">Comment</i> 
+            </a>      
+            
+              <a class="tab-item" href="#">
+                <i class="icon ion-share">Share</i> 
+            </a>   
+           
+        </div>  
+      </div>
+  </ion-content>
+</ion-view>

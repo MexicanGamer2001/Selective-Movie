@@ -1,0 +1,28 @@
+<ion-modal-view>
+  <div class="buttons">
+      <button class="button button-clear" ng-click="closeSetting()">Close</button>
+  </div>  
+  <ion-content style="text-align: center">
+      <h2>Current Color is </h2>
+      
+        <table >
+        <tr>
+            <td class="pink"></td>
+        <tr>
+      </table>
+      
+      <h2>Change Color?</h2>
+      <table >
+        <tr>
+            <td class="red" onclick="changeColor()"></td>
+            <td class="yellow" onclick="changeColor()"></td>
+            <td class="pink" onclick="changeColor()"></td>
+            <td class="blue" onclick="changeColor()"></td>
+        <tr>
+      </table>
+      <br>
+      <button class="button button-assertive" ng-click="closeSetting()">Close</button>
+      <button class="button button-assertive" ng-click="confirmSetting()">Confirm</button>
+      
+  </ion-content>
+</ion-modal-view>

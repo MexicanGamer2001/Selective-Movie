@@ -1,0 +1,24 @@
+<ion-view view-title="Trailers">
+  <ion-content>
+   
+      <div class="list card " href="#/app/playlists/{{playlist.id}}"  ng-repeat="playlist in playlists">
+          <div class="item item-text-wrap">
+    <img ng-src='{{playlist.pic}}' width="100px" height="150px">      
+          <h2>{{playlist.title}}</h2>
+          </div>
+         <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#">
+                <i class="icon ion-thumbsup">Like</i> 
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-chatbox">Comment</i> 
+            </a>      
+            
+              <a class="tab-item" href="#">
+                <i class="icon ion-share">Share</i> 
+            </a>   
+           
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

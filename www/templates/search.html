@@ -1,0 +1,14 @@
+<ion-view view-title="Search">
+  <ion-content>
+      <label class="item item-input">
+        <i class="icon ion-search" placeholder-icon></i>
+        <input type="Search" placeholder="Search" ng-model="searchQuery"/>  
+      </label>
+    <ion-list >
+        <ion-item ng-repeat='contacts in searchlist | filter:searchQuery'>
+               <img ng-src='{{contacts.pic}}' width="100px" height="150px">      
+          <h2>{{contacts.title}}</h2>
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
